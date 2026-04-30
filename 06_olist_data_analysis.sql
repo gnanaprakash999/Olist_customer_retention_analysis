@@ -45,8 +45,7 @@ group by
 	month(date(order_purchase_time))
 order by 
 	year(date(order_purchase_time)), 
-	month(date(order_purchase_time))
-;
+	month(date(order_purchase_time));
 
 /*
 Observation:
