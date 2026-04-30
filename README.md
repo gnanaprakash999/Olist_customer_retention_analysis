@@ -3,7 +3,7 @@ E-commerce Customer Retention & Churn Analysis (SQL Project)
 
 Project Overview-
 
-This project explores customer behavior, revenue trends, and retention patterns using the Olist Brazilian e-commerce dataset.  
+This project explores Olist revenue, customer behavior, revenue trends, and retention patterns using the Olist Brazilian e-commerce dataset.  
 The main goal was to understand how customers interact with the platform, where drop-offs happen, and why users don’t return after their first purchase.
 
 The entire workflow was built using SQL, starting from raw data ingestion to final analysis.
