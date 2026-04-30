@@ -200,37 +200,6 @@ CREATE TABLE fact_order_items (
     price DECIMAL(10,2),
     freight_value DECIMAL(10,2)
 );
-
--- INSERT INTO fact_order_items (
---     order_id,
---     order_item_id,
---     date_key,
---     customer_key,
---     seller_key,
---     product_key,
---     price,
---     freight_value
--- )
--- SELECT
---     oi.order_id,
---     oi.order_item_id,
---     dd.date_key,
---     dc.customer_key,
---     ds.seller_key,
---     dp.product_key,
---     oi.price,
---     oi.freight_value
--- FROM clean_order_items oi
--- JOIN clean_orders o
---     ON oi.order_id = o.order_id
--- JOIN dim_date dd
---     ON DATE(o.order_purchase_time) = dd.full_date
--- JOIN dim_customer dc
---     ON o.customer_id = dc.customer_id
--- JOIN dim_seller ds
---     ON oi.seller_id = ds.seller_id
--- JOIN dim_product dp
---     ON oi.product_id = dp.product_id;
     
 CREATE INDEX idx_clean_order_items_order_id ON clean_order_items(order_id);
 CREATE INDEX idx_clean_order_items_seller_id ON clean_order_items(seller_id);
